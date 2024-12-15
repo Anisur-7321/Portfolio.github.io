@@ -306,11 +306,11 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
     background: transparent;
     border: 1px solid var(--bg-color);
-    border-radius: 50%;
+    border-radius: 100px;
     font-size: 3rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
@@ -354,14 +354,28 @@ span{
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 255px;
+        width: 100%;
         min-width: 100vh;
         display: flex;
+
         flex-direction: column;
         background: rgba(0,0,0,0.9);
         transition: all 0.3s ease;
         backdrop-filter: blur(10px);
+        display: none;
     }
+
+    .navber li{
+        width: 100%;
+        text-align: start;
+        align-content: center;
+    }
+
+    .toggleNav{
+        display: block;
+    }
+
+
     .navber a{
         display: block;
         padding: 17px;
